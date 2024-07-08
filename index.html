@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Contact form Submission</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .container{
+        width:80%;
+    }
+    .container input, .container textarea, .container select{
+        width:100%;
+        padding:15px;
+        margin-bottom: 17px;
+        outline: none;
+        border:1px solid #ccc;
+        box-sizing: border-box;
+    
+     }
+     .blue-btn{
+    border:1px solid rgb(0, 166, 255);
+    background: rgb(0, 157, 255);
+    color:white;
+    width: 100px;
+    height: 30px;
+    }
+    .blue-btn:hover{
+        color:pink;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Contact Form</h1>
+         <form action="https://formsubmit.co/nafisaislam_47@yahoo.com" method="POST">
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder=" Email " required>
+            <select name="Continent">
+                <option>Africa</option>
+                <option>Antarctica</option>
+                <option>Asia</option>
+                <option>Australia</option>
+                <option>Europe</option>
+                <option>North America</option>
+                <option>South America</option>
+            </select>
+            <textarea name="Message" placeholder="Message" required></textarea>
+            <button type="submit" class="blue-btn">Send</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
